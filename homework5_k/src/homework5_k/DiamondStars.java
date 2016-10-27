@@ -17,7 +17,7 @@ public class DiamondStars {
 						System.out.print(" ");
 				}
 				else {
-					if(j>=i-hight+1 && j<=hight*2-i+2)
+					if(j>=i-hight+1 && j<=3*hight-i-3)
 						System.out.print("*");
 					else System.out.print(" ");
 				}
