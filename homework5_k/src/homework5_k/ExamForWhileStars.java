@@ -26,6 +26,8 @@ public class ExamForWhileStars {
 				new DiamondStars().print();
 			else if(sel==5)
 				System.exit(0);
+			else 
+				continue;
 		}
 	}
 
