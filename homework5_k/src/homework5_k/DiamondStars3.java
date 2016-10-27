@@ -30,10 +30,9 @@ public class DiamondStars3 {
 			System.out.print(a[flag][i]);
 		System.out.println();
 		
-		if(s==0){
-			flag=size-1;
+		if(s==0)
 			return;
-		}
+		
 		++flag;
 		print(s-1,e+1, a);
 		--flag;
