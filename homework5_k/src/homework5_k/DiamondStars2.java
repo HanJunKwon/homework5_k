@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class DiamondStars2 {
 	public void print() {
 		Scanner sc = new Scanner(System.in);
-		System.out.print("이등변삼각형 높이입력 : ");
+		System.out.print("다이아몬드 크기 입력 : ");
 		int hight = sc.nextInt();
 
 		for (int i = 0; i < hight; ++i) {
