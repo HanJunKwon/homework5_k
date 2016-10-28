@@ -15,7 +15,7 @@ public class DiamondStars2 {
 				else 
 					System.out.print(" ");
 			}
-			System.out.println();;
+			System.out.println();
 		}
 		for(int i=0; i<hight-1; ++i){
 			for(int j=0; j<hight*2-1; ++j){
