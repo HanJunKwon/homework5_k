@@ -23,8 +23,8 @@ public class DiamondStars3 {
 		print(size - 1, size - 1, arr);
 	}
 
-	public void print(int s, int e, String a[][]) {
-		for (int i = s; i <= e; ++i)
+	public void print(int start, int end, String a[][]) {
+		for (int i = start; i <= end; ++i)
 			a[colunm][i] = "*";
 
 		for (int i = 0; i < row; ++i)
@@ -35,7 +35,7 @@ public class DiamondStars3 {
 			return;
 		else {
 			++colunm;
-			print(s - 1, e + 1, a);
+			print(start - 1, end + 1, a);
 			--colunm;
 
 			for (int i = 0; i < row; ++i)
