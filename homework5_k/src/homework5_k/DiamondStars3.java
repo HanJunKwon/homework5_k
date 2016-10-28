@@ -30,8 +30,8 @@ public class DiamondStars3 {
 		for (int i = 0; i < row; ++i)
 			System.out.print(a[colunm][i]);
 		System.out.println();
-
-		if (s == 0)
+		
+		if (start == 0)
 			return;
 		else {
 			++colunm;
