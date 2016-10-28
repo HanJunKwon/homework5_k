@@ -3,18 +3,18 @@ package homework5_k;
 import java.util.Scanner;
 
 public class DiamondStars3 {
-	int flag=0;
+	int colunm=0;
 	int size=0;
-	int length=0;
+	int row=0;
 	public void print(){
 		Scanner sc = new Scanner(System.in);
 		System.out.print("다이아몬드 크기 입력 : ");
 		size = sc.nextInt();
-		length = size*2-1;
+		row = size*2-1;
 		
-		String[][] arr = new String[size][length];
+		String[][] arr = new String[size][row];
 		for(int i=0; i<size; ++i){
-			for(int j=0; j<length; ++j){
+			for(int j=0; j<row; ++j){
 				arr[i][j]=" ";
 			}
 		}
@@ -24,21 +24,21 @@ public class DiamondStars3 {
 	
 	public void print(int s, int e, String a[][]){
 		for(int i=s; i<=e; ++i)
-			a[flag][i]="*";
+			a[colunm][i]="*";
 		
-		for(int i=0; i<length; ++i)
-			System.out.print(a[flag][i]);
+		for(int i=0; i<row; ++i)
+			System.out.print(a[colunm][i]);
 		System.out.println();
 		
 		if(s==0)
 			return;
 		
-		++flag;
+		++colunm;
 		print(s-1,e+1, a);
-		--flag;
+		--colunm;
 		
-		for(int i=0; i<length; ++i)
-			System.out.print(a[flag][i]);
+		for(int i=0; i<row; ++i)
+			System.out.print(a[colunm][i]);
 		System.out.println();
 	}
 }
